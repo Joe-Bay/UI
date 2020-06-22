@@ -159,7 +159,59 @@ footer{
     padding: 1%;
     background:white;
 }
+.startPlanning a:hover{
+    background-color: azure;
+}
 footer nav{
     justify-content: center;
     background:grey;
+}
+
+@media(width: 500px){ /* mobile sizing */
+nav{
+    justify-content: center;
+}
+nav a{
+    font-size: 2.5rem;
+}
+.container h1{
+    font-size: 4rem;
+}
+.container p{
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+.first-section{
+    font-size: 1.6rem;
+}
+h2{
+    font-size: 3rem;
+}
+.features-container{
+    flex-direction:column;
+    margin-left: 10%;
+    margin-right:10%;
+}
+.potluck-feature{
+    width: 100%;
+    margin-bottom: 5%;
+    border-bottom: 1px dashed black;
+}
+.potluck-feature h3{
+    font-weight: 700;
+}
+.startPlanning h3{
+    font-size: 2.5rem;
+}
+.startPlanning{
+    margin-bottom: 10%;
+}
+footer{
+    background:grey;
+    height: auto;
+    
+}
+footer nav a{
+    font-size: 1.6rem;
+}
 }
