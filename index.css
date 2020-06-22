@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    background:lightgray;
 }
 ol, ul {
 	list-style: none;
@@ -112,9 +113,10 @@ a{
     text-align: center;
     font-size: 2rem;
     height: 50vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-bottom: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 1px dashed black;
+    background:white;
 }
 
 h2{
@@ -126,10 +128,17 @@ h2{
     display:flex;
     justify-content: space-around;
 }
+.features{
+    background:white;
+    margin-right: 5%;
+    margin-left: 5%;
+}
 .potluck-feature{
     text-align: center;
     width: 30%;
     font-size: 1.6rem;
+    margin-bottom: 3%;
+    
 
 }
 .potluck-feature h3{
@@ -143,9 +152,7 @@ h2{
 .potluck-feature img:hover{
     background-color: mistyrose;
 }
-footer{
-    height: 30vh;
-}
+
 .startPlanning{
     text-align:center;
     font-size: 1.6rem;
@@ -189,8 +196,6 @@ h2{
 }
 .features-container{
     flex-direction:column;
-    margin-left: 10%;
-    margin-right:10%;
 }
 .potluck-feature{
     width: 100%;
