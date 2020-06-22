@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background-color: rgba(214, 189, 186, 0.699);
 }
 ol, ul {
 	list-style: none;
@@ -42,9 +41,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-* {
+/* * {
     border: 1px solid grey;
-}
+} */
 .hero-image{
     position: relative;
     height: 60vh;
@@ -66,6 +65,9 @@ nav a{
 }
 nav a:hover{
     opacity: 0.9;
+}
+a{
+    border: 1px solid black;
 }
 .container{ /* setting the position for the text */
     position: absolute;
@@ -102,9 +104,23 @@ nav a:hover{
 .button:hover{
     opacity: 0.9;
 } 
+.first-section{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content:center;
+    text-align: center;
+    font-size: 2rem;
+    height: 50vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 1px solid black;
+}
+
 h2{
     text-align:center;
     font-size: 4rem;
+    padding: 2%;
 }
 .features-container{
     display:flex;
@@ -121,4 +137,29 @@ h2{
 }
 .potluck-feature img{
     width: 40%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.potluck-feature img:hover{
+    background-color: mistyrose;
+}
+footer{
+    height: 30vh;
+}
+.startPlanning{
+    text-align:center;
+    font-size: 1.6rem;
+    margin: 3%;
+}
+.startPlanning h3{
+    font-size: 3rem;
+    margin: 2%;
+}
+.startPlanning a{
+    padding: 1%;
+    background:white;
+}
+footer nav{
+    justify-content: center;
+    background:grey;
 }
