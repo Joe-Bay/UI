@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background:lightgray;
+    background:deepskyblue;
 }
 ol, ul {
 	list-style: none;
@@ -51,13 +51,16 @@ table {
     overflow: hidden;
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),/* linear gradient is making image slightly dimmer to read text */ url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat, center;
     background-size: cover;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 nav{
     display:flex;
+    background:gray;
 }
 nav a{
     font-size: 1.6rem;
-    padding: 1%;
+    padding: .5%;
     background-color:white;
     border-radius: 10px;
     margin: 1%;
