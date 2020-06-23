@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background:lightgray;
+    background:deepskyblue;
 }
 ol, ul {
 	list-style: none;
@@ -49,23 +49,36 @@ table {
     position: relative;
     height: 60vh;
     overflow: hidden;
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),/* linear gradient is making image slightly dimmer to read text */ url(https://images.unsplash.com/photo-1530062845289-9109b2c9c868?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80) no-repeat, center;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),/* linear gradient is making image slightly dimmer to read text */ url(https://images.unsplash.com/photo-1530062845289-9109b2c9c868?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80) no-repeat, center;
     background-size: cover;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.hero-image-2{
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat, center;
+    background-size: cover;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 nav{
     display:flex;
+    background:gray;
 }
 nav a{
     font-size: 1.6rem;
-    padding: 1%;
+    padding: .5%;
     background-color:white;
     border-radius: 10px;
-    margin: 1%;
+    margin: .5%;
     text-decoration: none;
     color:black;
 }
 nav a:hover{
     opacity: 0.9;
+    background:lightgray
 }
 a{
     border: 1px solid black;
@@ -81,7 +94,7 @@ a{
 }
 .container h1{
     font-size: 6rem;
-    border: 10px solid white;
+    font-family: 'Galada', sans-serif;
 }
 .container p{
     font-size: 2.5rem;
@@ -98,38 +111,33 @@ a{
  font-size: 1.6rem;
  color: black;
 }
-.button-container{
-    text-align:center;
-    position: absolute;
-}
+
 .button:hover{
     opacity: 0.9;
+    background-color:lightgray;
 } 
 .first-section{
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    justify-content:center;
     text-align: center;
     font-size: 2rem;
-    height: 50vh;
+    height: 30vh;
     margin-left: 5%;
     margin-right: 5%;
     border-bottom: 1px dashed black;
-    background:white;
+    background:azure;;
 }
 
 h2{
     text-align:center;
     font-size: 4rem;
     padding: 2%;
+    font-family: 'Galada', sans-serif;
 }
 .features-container{
     display:flex;
     justify-content: space-around;
 }
 .features{
-    background:white;
+    background: azure;
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -143,14 +151,16 @@ h2{
 }
 .potluck-feature h3{
     font-size: 2rem;
+    font-weight: 700;
 }
 .potluck-feature img{
     width: 40%;
     border-radius: 50%;
     border: 2px solid black;
+    background: mediumturquoise;
 }
 .potluck-feature img:hover{
-    background-color: mistyrose;
+    background-color: lightgray;
 }
 
 .startPlanning{
@@ -161,25 +171,74 @@ h2{
 .startPlanning h3{
     font-size: 3rem;
     margin: 2%;
+    font-family: 'Galada', sans-serif;
 }
 .startPlanning a{
     padding: 1%;
     background:white;
 }
-.startPlanning a:hover{
-    background-color: azure;
+.team-container{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.the-team{
+    background:azure;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.team-member{
+    text-align: center;
+    width: 30%;
+    font-size: 1.6rem;
+    margin-bottom: 3%;
+}
+.team-member h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.team-member img{
+    width: 40%;
+    border-radius: 10px;
 }
 footer nav{
     justify-content: center;
     background:grey;
 }
 
+@media(width: 800px){
+    .first-section{
+        font-size: 1.6rem;
+    }
+    .potluck-feature{
+        font-size: 1.3rem;
+    }
+    .potluck-feature h3{
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    footer nav a{
+        text-align: center;
+    }
+    .first-section{
+        font-size: 1.6rem;
+    }
+    .team-member{
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    .team-member h3{
+        font-size: 1.6rem;
+    }
+}
 @media(width: 500px){ /* mobile sizing */
 nav{
     justify-content: center;
 }
 nav a{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .container h1{
     font-size: 4rem;
@@ -189,7 +248,8 @@ nav a{
     margin-bottom: 10%;
 }
 .first-section{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    height: 40vh;
 }
 h2{
     font-size: 3rem;
@@ -219,4 +279,43 @@ footer{
 footer nav a{
     font-size: 1.6rem;
 }
+.the-team{
+    flex-direction:column;
+}
+.team-member{
+    width: 100%;
+    margin-bottom: 5%;
+    border-bottom: 1px dashed black;
+    font-size: 1.4rem;
+}
+.team-member h3{
+    font-weight: 700;
+}
+}
+@media(max-width:375px){
+    .container h1{
+        font-size: 4.5rem;
+    }
+    .first-section{
+        font-size: 1.3rem;
+    }
+    .features-container{
+        flex-wrap:wrap;
+    }
+    .potluck-feature{
+        width: 100%;
+    }
+    .startPlanning h3{
+        font-size: 2.5rem;
+    }
+    .the-team{
+        flex-flow: column, wrap;
+    }
+    .the-team h2{
+        font-size: 2.3rem;
+    }
+    .team-member{
+        width: 100%;
+        font-size: 1.4rem;
+    }
 }
