@@ -187,7 +187,7 @@ nav{
     justify-content: center;
 }
 nav a{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .container h1{
     font-size: 4rem;
@@ -229,4 +229,29 @@ footer{
 footer nav a{
     font-size: 1.6rem;
 }
+}
+@media(max-width:375px){
+    .container h1{
+        font-size: 4.5rem;
+    }
+    .first-section h2{
+        font-size: 2.3rem;
+    }
+    .first-section{
+        font-size: 1.4rem;
+        height: auto;
+    }
+    .the-team{
+        flex-flow: column, wrap;
+    }
+    .the-team h2{
+        font-size: 2.3rem;
+    }
+    .team-member{
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .startPlanning h3{
+        font-size: 2.5rem;
+    }
 }

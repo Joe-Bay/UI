@@ -238,3 +238,20 @@ footer nav a{
     font-size: 1.6rem;
 }
 }
+@media(max-width:375px){
+    .container h1{
+        font-size: 4.5rem;
+    }
+    .first-section{
+        font-size: 1.3rem;
+    }
+    .features-container{
+        flex-wrap:wrap;
+    }
+    .potluck-feature{
+        width: 100%;
+    }
+    .startPlanning h3{
+        font-size: 2.5rem;
+    }
+}
