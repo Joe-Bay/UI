@@ -54,6 +54,15 @@ table {
     margin-right: 5%;
     margin-left: 5%;
 }
+.hero-image-2{
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat, center;
+    background-size: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 nav{
     display:flex;
     background:gray;
@@ -63,7 +72,7 @@ nav a{
     padding: .5%;
     background-color:white;
     border-radius: 10px;
-    margin: 1%;
+    margin: .5%;
     text-decoration: none;
     color:black;
 }
@@ -108,13 +117,9 @@ a{
     background-color:lightgray;
 } 
 .first-section{
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    justify-content:center;
     text-align: center;
     font-size: 2rem;
-    height: 50vh;
+    height: 30vh;
     margin-left: 5%;
     margin-right: 5%;
     border-bottom: 1px dashed black;
@@ -172,6 +177,30 @@ h2{
     padding: 1%;
     background:white;
 }
+.team-container{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.the-team{
+    background:azure;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.team-member{
+    text-align: center;
+    width: 30%;
+    font-size: 1.6rem;
+    margin-bottom: 3%;
+}
+.team-member h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.team-member img{
+    width: 40%;
+    border-radius: 10px;
+}
 footer nav{
     justify-content: center;
     background:grey;
@@ -193,13 +222,23 @@ footer nav{
     footer nav a{
         text-align: center;
     }
+    .first-section{
+        font-size: 1.6rem;
+    }
+    .team-member{
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    .team-member h3{
+        font-size: 1.6rem;
+    }
 }
 @media(width: 500px){ /* mobile sizing */
 nav{
     justify-content: center;
 }
 nav a{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .container h1{
     font-size: 4rem;
@@ -209,7 +248,8 @@ nav a{
     margin-bottom: 10%;
 }
 .first-section{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    height: 40vh;
 }
 h2{
     font-size: 3rem;
@@ -239,6 +279,18 @@ footer{
 footer nav a{
     font-size: 1.6rem;
 }
+.the-team{
+    flex-direction:column;
+}
+.team-member{
+    width: 100%;
+    margin-bottom: 5%;
+    border-bottom: 1px dashed black;
+    font-size: 1.4rem;
+}
+.team-member h3{
+    font-weight: 700;
+}
 }
 @media(max-width:375px){
     .container h1{
@@ -255,5 +307,15 @@ footer nav a{
     }
     .startPlanning h3{
         font-size: 2.5rem;
+    }
+    .the-team{
+        flex-flow: column, wrap;
+    }
+    .the-team h2{
+        font-size: 2.3rem;
+    }
+    .team-member{
+        width: 100%;
+        font-size: 1.4rem;
     }
 }
