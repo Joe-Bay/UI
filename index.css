@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing:border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background:lightgray;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* * {
+    border: 1px solid grey;
+} */
+.hero-image{
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),/* linear gradient is making image slightly dimmer to read text */ url(https://images.unsplash.com/photo-1530062845289-9109b2c9c868?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80) no-repeat, center;
+    background-size: cover;
+}
+nav{
+    display:flex;
+}
+nav a{
+    font-size: 1.6rem;
+    padding: 1%;
+    background-color:white;
+    border-radius: 10px;
+    margin: 1%;
+    text-decoration: none;
+    color:black;
+}
+nav a:hover{
+    opacity: 0.9;
+}
+a{
+    border: 1px solid black;
+}
+.container{ /* setting the position for the text */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+.container h1{
+    font-size: 6rem;
+    border: 10px solid white;
+}
+.container p{
+    font-size: 2.5rem;
+    color:white;
+    padding: 2%;
+    padding-bottom: 3%;
+
+}
+.button{
+ padding: 2%;
+ background:white;
+ text-decoration: none;
+ border-radius: 10px;
+ font-size: 1.6rem;
+ color: black;
+}
+.button-container{
+    text-align:center;
+    position: absolute;
+}
+.button:hover{
+    opacity: 0.9;
+} 
+.first-section{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content:center;
+    text-align: center;
+    font-size: 2rem;
+    height: 50vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 1px dashed black;
+    background:white;
+}
+
+h2{
+    text-align:center;
+    font-size: 4rem;
+    padding: 2%;
+}
+.features-container{
+    display:flex;
+    justify-content: space-around;
+}
+.features{
+    background:white;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.potluck-feature{
+    text-align: center;
+    width: 30%;
+    font-size: 1.6rem;
+    margin-bottom: 3%;
+    
+
+}
+.potluck-feature h3{
+    font-size: 2rem;
+}
+.potluck-feature img{
+    width: 40%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.potluck-feature img:hover{
+    background-color: mistyrose;
+}
+
+.startPlanning{
+    text-align:center;
+    font-size: 1.6rem;
+    margin: 3%;
+}
+.startPlanning h3{
+    font-size: 3rem;
+    margin: 2%;
+}
+.startPlanning a{
+    padding: 1%;
+    background:white;
+}
+.startPlanning a:hover{
+    background-color: azure;
+}
+footer nav{
+    justify-content: center;
+    background:grey;
+}
+
+@media(width: 500px){ /* mobile sizing */
+nav{
+    justify-content: center;
+}
+nav a{
+    font-size: 2.5rem;
+}
+.container h1{
+    font-size: 4rem;
+}
+.container p{
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+.first-section{
+    font-size: 1.6rem;
+}
+h2{
+    font-size: 3rem;
+}
+.features-container{
+    flex-direction:column;
+}
+.potluck-feature{
+    width: 100%;
+    margin-bottom: 5%;
+    border-bottom: 1px dashed black;
+}
+.potluck-feature h3{
+    font-weight: 700;
+}
+.startPlanning h3{
+    font-size: 2.5rem;
+}
+.startPlanning{
+    margin-bottom: 10%;
+}
+footer{
+    background:grey;
+    height: auto;
+    
+}
+footer nav a{
+    font-size: 1.6rem;
+}
+}
