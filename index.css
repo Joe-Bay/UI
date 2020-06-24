@@ -63,25 +63,32 @@ table {
     margin-left: 5%;
     margin-right: 5%;
 }
+@keyframes example{
+    from {color:white;}
+    to {color:deepskyblue;}
+}
 nav{
     display:flex;
-    background:gray;
+    background-image: linear-gradient(to bottom left, grey, darkgrey);
+    align-items:baseline;
+}
+#top-logo{
+    padding:0;
+    width: 15%;
+}
+#top-logo a{
+    color:white;
+    font-size: 2.5rem;
 }
 nav a{
     font-size: 1.6rem;
-    padding: .5%;
-    background-color:white;
-    border-radius: 10px;
     margin: .5%;
     text-decoration: none;
     color:black;
 }
 nav a:hover{
-    opacity: 0.9;
-    background:lightgray
-}
-a{
-    border: 1px solid black;
+    font-size: 2rem;
+    color:white
 }
 .container{ /* setting the position for the text */
     position: absolute;
@@ -95,6 +102,12 @@ a{
 .container h1{
     font-size: 6rem;
     font-family: 'Galada', sans-serif;
+    
+}
+.container h1:hover{
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 .container p{
     font-size: 2.5rem;
@@ -119,11 +132,12 @@ a{
 .first-section{
     text-align: center;
     font-size: 2rem;
-    height: 30vh;
+    height: auto;
     margin-left: 5%;
     margin-right: 5%;
     border-bottom: 1px dashed black;
-    background:azure;;
+    background:azure;
+    padding-bottom: 5%;
 }
 
 h2{
@@ -197,6 +211,10 @@ h2{
     font-size: 2rem;
     font-weight: 700;
 }
+.team-member h4{
+    font-weight:550;
+    font-size: 1.5rem;
+}
 .team-member img{
     width: 40%;
     border-radius: 10px;
@@ -206,9 +224,13 @@ footer nav{
     background:grey;
 }
 
-@media(width: 800px){
+@media(max-width: 800px){
+    #top-logo{
+        display:none;
+    }
     .first-section{
         font-size: 1.6rem;
+        height: auto;
     }
     .potluck-feature{
         font-size: 1.3rem;
@@ -233,7 +255,7 @@ footer nav{
         font-size: 1.6rem;
     }
 }
-@media(width: 500px){ /* mobile sizing */
+@media(max-width: 500px){ /* mobile sizing */
 nav{
     justify-content: center;
 }
@@ -249,13 +271,13 @@ nav a{
 }
 .first-section{
     font-size: 1.4rem;
-    height: 40vh;
 }
 h2{
     font-size: 3rem;
 }
 .features-container{
-    flex-direction:column;
+    flex-direction: row;
+    flex-wrap:wrap;
 }
 .potluck-feature{
     width: 100%;
@@ -280,7 +302,9 @@ footer nav a{
     font-size: 1.6rem;
 }
 .the-team{
-    flex-direction:column;
+    flex-flow:column, wrap;
+    
+
 }
 .team-member{
     width: 100%;
@@ -297,7 +321,7 @@ footer nav a{
         font-size: 4.5rem;
     }
     .first-section{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     .features-container{
         flex-wrap:wrap;
