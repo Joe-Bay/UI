@@ -49,8 +49,6 @@ table {
     overflow: hidden;
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),/* linear gradient is making image slightly dimmer to read text */ url(https://images.unsplash.com/photo-1530062845289-9109b2c9c868?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80) no-repeat, center;
     background-size: cover;
-    margin-right: 5%;
-    margin-left: 5%;
 }
 .hero-image-2{
     position: relative;
@@ -58,8 +56,6 @@ table {
     overflow: hidden;
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat, center;
     background-size: cover;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 @keyframes example{
     from {color:white;}
@@ -85,6 +81,7 @@ nav a{
     color:black;
 }
 nav a:hover{
+    transition: 0.3s;
     font-size: 2rem;
     color:white
 }
@@ -100,12 +97,12 @@ nav a:hover{
 .container h1{
     font-size: 6rem;
     font-family: 'Galada', sans-serif;
+    text-shadow: 3px 5px black;
     
 }
 .container h1:hover{
-    animation-name: example;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    transition: 2s;
+    color: deepskyblue;
 }
 .container p{
     font-size: 2.5rem;
@@ -121,7 +118,9 @@ nav a:hover{
  border-radius: 10px;
  font-size: 1.6rem;
  color: black;
+ text-shadow:.5px .5px grey;
 }
+
 
 .button:hover{
     opacity: 0.9;
@@ -129,13 +128,10 @@ nav a:hover{
 } 
 .first-section{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     height: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-bottom: 1px dashed black;
-    background:azure;
     padding-bottom: 5%;
+    color:white;
 }
 
 h2{
@@ -149,9 +145,7 @@ h2{
     justify-content: space-around;
 }
 .features{
-    background: azure;
-    margin-right: 5%;
-    margin-left: 5%;
+    color:white;
 }
 .potluck-feature{
     text-align: center;
@@ -169,16 +163,18 @@ h2{
     width: 40%;
     border-radius: 50%;
     border: 2px solid black;
-    background: deepskyblue;
+    background: honeydew;
 }
 .potluck-feature img:hover{
-    background-color: honeydew;
+    transition: 1s;
+    background-color: turquoise;
 }
 
 .startPlanning{
     text-align:center;
     font-size: 1.6rem;
     margin: 3%;
+    color:white;
 }
 .startPlanning h3{
     font-size: 3rem;
