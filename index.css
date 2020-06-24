@@ -25,7 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background:deepskyblue;
+    /* background:deepskyblue; */
+    background-image: linear-gradient(to top, grey, deepskyblue);
 }
 ol, ul {
 	list-style: none;
@@ -42,9 +43,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* * {
-    border: 1px solid grey;
-} */
 .hero-image{
     position: relative;
     height: 60vh;
@@ -69,7 +67,7 @@ table {
 }
 nav{
     display:flex;
-    background-image: linear-gradient(to bottom left, grey, darkgrey);
+    background-image: linear-gradient(to top, grey, deepskyblue );
     align-items:baseline;
 }
 #top-logo{
@@ -106,7 +104,7 @@ nav a:hover{
 }
 .container h1:hover{
     animation-name: example;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 .container p{
@@ -171,10 +169,10 @@ h2{
     width: 40%;
     border-radius: 50%;
     border: 2px solid black;
-    background: mediumturquoise;
+    background: deepskyblue;
 }
 .potluck-feature img:hover{
-    background-color: lightgray;
+    background-color: honeydew;
 }
 
 .startPlanning{
@@ -191,6 +189,13 @@ h2{
     padding: 1%;
     background:white;
 }
+footer nav a{
+    font-size: 2rem;
+}
+footer nav a:hover{
+    font-size: 2.5rem;
+}
+/* about page stuff */
 .team-container{
     display:flex;
     justify-content: space-around;
@@ -314,6 +319,9 @@ footer nav a{
 }
 .team-member h3{
     font-weight: 700;
+}
+footer nav a:hover{
+    display:none;
 }
 }
 @media(max-width:375px){
