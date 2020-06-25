@@ -68,7 +68,7 @@ nav{
 }
 #top-logo{
     padding:0;
-    width: 15%;
+    width: 20%;
 }
 #top-logo a{
     color:white;
@@ -224,7 +224,11 @@ footer nav{
     justify-content: center;
     background:grey;
 }
-
+@media(max-width: 1300px){
+    #top-logo{
+        width: 35%;
+    }
+}
 @media(max-width: 800px){
     #top-logo{
         display:none;
