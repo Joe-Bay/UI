@@ -25,7 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background:deepskyblue;
+    /* background:deepskyblue; */
+    background-image: linear-gradient(to top, grey, deepskyblue);
 }
 ol, ul {
 	list-style: none;
@@ -42,17 +43,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* * {
-    border: 1px solid grey;
-} */
 .hero-image{
     position: relative;
     height: 60vh;
     overflow: hidden;
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),/* linear gradient is making image slightly dimmer to read text */ url(https://images.unsplash.com/photo-1530062845289-9109b2c9c868?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80) no-repeat, center;
     background-size: cover;
-    margin-right: 5%;
-    margin-left: 5%;
 }
 .hero-image-2{
     position: relative;
@@ -60,28 +56,34 @@ table {
     overflow: hidden;
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat, center;
     background-size: cover;
-    margin-left: 5%;
-    margin-right: 5%;
+}
+@keyframes example{
+    from {color:white;}
+    to {color:deepskyblue;}
 }
 nav{
     display:flex;
-    background:gray;
+    background-image: linear-gradient(to top, grey, deepskyblue );
+    align-items:baseline;
+}
+#top-logo{
+    padding:0;
+    width: 20%;
+}
+#top-logo a{
+    color:white;
+    font-size: 2.5rem;
 }
 nav a{
     font-size: 1.6rem;
-    padding: .5%;
-    background-color:white;
-    border-radius: 10px;
     margin: .5%;
     text-decoration: none;
     color:black;
 }
 nav a:hover{
-    opacity: 0.9;
-    background:lightgray
-}
-a{
-    border: 1px solid black;
+    transition: 0.3s;
+    font-size: 2rem;
+    color:white
 }
 .container{ /* setting the position for the text */
     position: absolute;
@@ -95,6 +97,12 @@ a{
 .container h1{
     font-size: 6rem;
     font-family: 'Galada', sans-serif;
+    text-shadow: 3px 5px black;
+    
+}
+.container h1:hover{
+    transition: 2s;
+    color: deepskyblue;
 }
 .container p{
     font-size: 2.5rem;
@@ -110,7 +118,9 @@ a{
  border-radius: 10px;
  font-size: 1.6rem;
  color: black;
+ text-shadow:.5px .5px grey;
 }
+
 
 .button:hover{
     opacity: 0.9;
@@ -118,12 +128,10 @@ a{
 } 
 .first-section{
     text-align: center;
-    font-size: 2rem;
-    height: 30vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-bottom: 1px dashed black;
-    background:azure;;
+    font-size: 2.2rem;
+    height: auto;
+    padding-bottom: 5%;
+    color:white;
 }
 
 h2{
@@ -137,9 +145,7 @@ h2{
     justify-content: space-around;
 }
 .features{
-    background: azure;
-    margin-right: 5%;
-    margin-left: 5%;
+    color:white;
 }
 .potluck-feature{
     text-align: center;
@@ -157,16 +163,18 @@ h2{
     width: 40%;
     border-radius: 50%;
     border: 2px solid black;
-    background: mediumturquoise;
+    background: honeydew;
 }
 .potluck-feature img:hover{
-    background-color: lightgray;
+    transition: 1s;
+    background-color: turquoise;
 }
 
 .startPlanning{
     text-align:center;
     font-size: 1.6rem;
     margin: 3%;
+    color:white;
 }
 .startPlanning h3{
     font-size: 3rem;
@@ -177,6 +185,13 @@ h2{
     padding: 1%;
     background:white;
 }
+footer nav a{
+    font-size: 2rem;
+}
+footer nav a:hover{
+    font-size: 2.5rem;
+}
+/* about page stuff */
 .team-container{
     display:flex;
     justify-content: space-around;
@@ -197,6 +212,10 @@ h2{
     font-size: 2rem;
     font-weight: 700;
 }
+.team-member h4{
+    font-weight:550;
+    font-size: 1.5rem;
+}
 .team-member img{
     width: 40%;
     border-radius: 10px;
@@ -205,10 +224,18 @@ footer nav{
     justify-content: center;
     background:grey;
 }
-
-@media(width: 800px){
+@media(max-width: 1300px){
+    #top-logo{
+        width: 35%;
+    }
+}
+@media(max-width: 800px){
+    #top-logo{
+        display:none;
+    }
     .first-section{
         font-size: 1.6rem;
+        height: auto;
     }
     .potluck-feature{
         font-size: 1.3rem;
@@ -233,7 +260,7 @@ footer nav{
         font-size: 1.6rem;
     }
 }
-@media(width: 500px){ /* mobile sizing */
+@media(max-width: 500px){ /* mobile sizing */
 nav{
     justify-content: center;
 }
@@ -249,13 +276,13 @@ nav a{
 }
 .first-section{
     font-size: 1.4rem;
-    height: 40vh;
 }
 h2{
     font-size: 3rem;
 }
 .features-container{
-    flex-direction:column;
+    flex-direction: row;
+    flex-wrap:wrap;
 }
 .potluck-feature{
     width: 100%;
@@ -280,7 +307,9 @@ footer nav a{
     font-size: 1.6rem;
 }
 .the-team{
-    flex-direction:column;
+    flex-flow:column, wrap;
+    
+
 }
 .team-member{
     width: 100%;
@@ -291,13 +320,16 @@ footer nav a{
 .team-member h3{
     font-weight: 700;
 }
+footer nav a:hover{
+    display:none;
+}
 }
 @media(max-width:375px){
     .container h1{
         font-size: 4.5rem;
     }
     .first-section{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     .features-container{
         flex-wrap:wrap;
